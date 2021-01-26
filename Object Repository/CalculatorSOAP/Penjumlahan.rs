@@ -65,6 +65,11 @@ WS.verifyResponseStatusCode(response, 200)
 assertThat(response.getStatusCode()).isEqualTo(200)
 
 
-assertThat(response.getResponseText()).contains('AddResult')</verificationScript>
+assertThat(response.getResponseText()).contains('AddResult')
+
+
+//WS.verifyElementPropertyValue(response, 'issues[0].fields.project.key', 'KTP')
+
+WS.verifyElementPropertyValue(response, 'AddResponse.AddResult', '32')</verificationScript>
    <wsdlAddress>http://dneonline.com/calculator.asmx?WSDL</wsdlAddress>
 </WebServiceRequestEntity>
